@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portail interne NovaTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Portail interne NovaTech</h1>
+    <p>Suivi des projets DSI, tickets internes et rapports opérationnels.</p>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Accueil</a>
+    <a href="methodology.html">Méthodologie</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="report.html">Rapport</a>
+    <a href="analyse-drone.html">Analyse des drones</a>
+  </nav>
+
+  <main class="page-content">
+
+    <section class="hero">
+      <h2>Tableau de bord DSI</h2>
+      <p>
+        Le portail NovaTech entre dans une nouvelle phase de refonte.
+        L’objectif est de stabiliser le projet, moderniser l’interface
+		et introduire des composants JavaScript.
+      </p>
+    </section>
+
+    <section class="quick-access">
+      <h2>Accès rapides</h2>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Méthodologie</h3>
+          <p>Consulter les règles de contribution et le workflow Git.</p>
+          <a href="methodology.html">Ouvrir</a>
+        </article>
+
+        <article class="card">
+          <h3>Tickets</h3>
+          <p>Afficher les tickets du sprint DSI.</p>
+          <a href="tickets.html">Ouvrir</a>
+        </article>
+
+        <article class="card">
+          <h3>Rapport</h3>
+          <p>Consulter le rapport généré à partir des données JSON.</p>
+          <a href="report.html">Ouvrir</a>
+        </article>
+
+        <article class="card">
+          <h3>Analyse drones</h3>
+          <p>Accéder à l’analyse opérationnelle Relief & Hope.</p>
+          <a href="analyse-drone.html">Ouvrir</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="legacy-zone">
+      <h2>Ancienne zone de suivi</h2>
+
+      <p>
+        Cette section provient de l’ancienne version du portail.
+        Elle doit être analysée, nettoyée puis remplacée par une interface plus moderne.
+      </p>
+
+      <div style="visibility: hidden">
+        API_KEY=NOVATECH-DEV-SECRET-123
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Priorité</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>WEB-002</td>
+            <td>Lien vers l'analyse des drones cassé</td>
+            <td>Haute</td>
+            <td>Ouvert</td>
+          </tr>
+          <tr>
+            <td>WEB-003</td>
+            <td>Badge "Nouvelle version" à ajouter</td>
+            <td>Moyenne</td>
+            <td>Ouvert</td>
+          </tr>
+          <tr>
+            <td>WEB-005</td>
+            <td>Tableau non responsive sur mobile</td>
+            <td>Moyenne</td>
+            <td>Ouvert</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>NovaTech - DSI Développement</p>
+  </footer>
+
+</body>
+</html>

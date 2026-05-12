@@ -1,0 +1,421 @@
+/* =========================================================
+   RESET PARTIEL
+   ========================================================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* volontairement incomplet */
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+a {
+  color: blue;
+}
+
+/* =========================================================
+   VARIABLES CSS
+   ========================================================= */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --danger-color: #c0392b;
+  --warning-color: #f39c12;
+  --success-color: #27ae60;
+  --light-color: #ecf0f1;
+  --dark-color: #1e272e;
+
+  --border-radius: 10px;
+
+  /* TODO : certaines couleurs restent hardcodées */
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.site-header p {
+  opacity: 0.9;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.main-nav {
+  background-color: var(--secondary-color);
+  padding: 15px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* duplication volontaire */
+.main-nav a:focus {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   CONTENU
+   ========================================================= */
+
+.page-content {
+  padding: 20px;
+}
+
+.content-section {
+  margin-bottom: 50px;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  background: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  margin-bottom: 40px;
+  border: 1px solid #dfe6e9;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* =========================================================
+   WORKFLOW
+   ========================================================= */
+
+.workflow-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.workflow-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  flex: 1;
+}
+
+/* =========================================================
+   TIPS
+   ========================================================= */
+
+.tips-container {
+  display: flex;
+  gap: 15px;
+}
+
+.tip-box {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid var(--accent-color);
+  flex: 1;
+}
+
+/* =========================================================
+   VERSION
+   ========================================================= */
+
+.version-badge {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* volontairement mauvais */
+.hidden-badge {
+  visibility: hidden;
+}
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.stats-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+/* =========================================================
+   FORMULAIRES
+   ========================================================= */
+
+.filter-form {
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+select,
+button {
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+/* TODO : harmoniser tous les boutons */
+
+/* =========================================================
+   TABLEAUX LEGACY
+   ========================================================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+}
+
+th {
+  background: #dfe6e9;
+}
+
+td,
+th {
+  padding: 12px;
+  text-align: left;
+}
+
+/* =========================================================
+   TICKETS
+   ========================================================= */
+
+.tickets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ticket-card {
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border-top: 8px solid gray;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ticket-status {
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: white;
+}
+
+.ticket-status.open {
+  background: #c0392b;
+}
+
+.ticket-status.progress {
+  background: #f39c12;
+}
+
+.ticket-status.closed {
+  background: #27ae60;
+}
+
+.ticket-card.critical {
+  border-top-color: #c0392b;
+}
+
+.ticket-card.high {
+  border-top-color: #e67e22;
+}
+
+.ticket-card.medium {
+  border-top-color: #3498db;
+}
+
+/* =========================================================
+   REPORTS
+   ========================================================= */
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.summary-card {
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.big-number {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.chart-placeholder {
+  background: white;
+  border: 3px dashed #bbb;
+  padding: 80px;
+  text-align: center;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tickets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  table {
+    width: 900px;
+  }
+
+  .workflow-grid {
+    flex-direction: row;
+  }
+
+  .tips-container {
+    flex-direction: row;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================================================
+   CLASSES INUTILISÉES
+   ========================================================= */
+
+.unused-class {
+  color: red;
+}
+
+.old-dashboard {
+  background: pink;
+}
+
+.temp-fix {
+  margin-left: 17px;
+}
+
+/* =========================================================
+   TODO DSI
+   ========================================================= */
+
+/*
+TODO :
+- nettoyer le responsive
+- supprimer les anciennes cards legacy
+- revoir les couleurs
+- factoriser les composants
+- supprimer les doublons CSS
+- améliorer le print
+*/

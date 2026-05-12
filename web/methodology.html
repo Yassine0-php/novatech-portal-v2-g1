@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Méthodologie - NovaTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Méthodologie projet</h1>
+    <p>Standards de développement et organisation DSI</p>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Accueil</a>
+    <a href="methodology.html">Méthodologie</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="report.html">Rapport</a>
+    <a href="analyse-drone.html">Analyse des drones</a>
+  </nav>
+
+  <main class="page-content">
+
+    <section class="content-section">
+      <h2>Organisation du développement</h2>
+
+      <p>
+        La DSI NovaTech utilise Git afin d'assurer :
+      </p>
+
+      <ul>
+        <li>la traçabilité des modifications ;</li>
+        <li>la stabilité du portail ;</li>
+        <li>la collaboration entre équipes ;</li>
+        <li>la validation progressive des fonctionnalités.</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Workflow Git</h2>
+
+      <div class="workflow-grid">
+
+        <article class="workflow-card">
+          <h3>main</h3>
+          <p>
+            Branche stable représentant la version validée du portail.
+          </p>
+        </article>
+
+        <article class="workflow-card">
+          <h3>develop</h3>
+          <p>
+            Branche d’intégration utilisée pour assembler les fonctionnalités.
+          </p>
+        </article>
+
+        <article class="workflow-card">
+          <h3>feat/*</h3>
+          <p>
+            Branche utilisée pour développer une nouvelle fonctionnalité.
+          </p>
+        </article>
+
+        <article class="workflow-card">
+          <h3>fix/*</h3>
+          <p>
+            Branche utilisée pour corriger un bug ou un incident.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Processus de contribution</h2>
+
+      <ol class="process-list">
+        <li>Créer une branche depuis <code>develop</code></li>
+        <li>Traiter un seul ticket par branche</li>
+        <li>Committer régulièrement</li>
+        <li>Ouvrir une Pull Request</li>
+        <li>Attendre validation avant fusion</li>
+      </ol>
+    </section>
+
+    <section class="content-section">
+      <h2>Bonnes pratiques Front-End</h2>
+
+      <div class="tips-container">
+
+        <div class="tip-box">
+          <h3>Responsive</h3>
+          <p>
+            Le portail doit rester utilisable sur mobile et petit écran.
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <h3>Composants réutilisables</h3>
+          <p>
+            Éviter la duplication CSS et HTML.
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <h3>JavaScript</h3>
+          <p>
+            Générer dynamiquement certaines parties de l’interface.
+          </p>
+        </div>
+
+        <div class="tip-box">
+          <h3>Accessibilité</h3>
+          <p>
+            Produire une interface lisible et cohérente.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="content-section version-section">
+      <h2>Versions</h2>
+
+      <!-- TODO : rendre ce badge réellement visible -->
+
+      <span class="version-badge hidden-badge">
+        Nouvelle version
+      </span>
+
+      <p>
+        Version actuelle : 2.0
+      </p>
+
+      <p>
+        Dernières évolutions :
+      </p>
+
+      <ul>
+        <li>Refonte progressive du portail</li>
+        <li>Ajout d’une génération dynamique de rapports</li>
+        <li>Amélioration du responsive</li>
+        <li>Introduction de composants JavaScript</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Notes techniques internes</h2>
+
+      <p class="legacy-note">
+        Certains composants historiques utilisent encore des tableaux HTML
+        et devront être migrés progressivement vers des layouts modernes.
+      </p>
+
+      <!--
+        TODO DSI :
+        supprimer l'ancien système cards-v1 après validation sprint
+      -->
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>NovaTech - DSI Développement</p>
+  </footer>
+
+</body>
+</html>

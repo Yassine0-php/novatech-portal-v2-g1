@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tickets - NovaTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Centre de tickets DSI</h1>
+    <p>Suivi des incidents et des tâches de refonte du portail.</p>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Accueil</a>
+    <a href="methodology.html">Méthodologie</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="report.html">Rapport</a>
+    <a href="analyse-drone.html">Analyse des drones</a>
+  </nav>
+
+  <main class="page-content">
+
+    <section class="content-section">
+      <h2>État du sprint</h2>
+
+      <div class="stats-grid">
+
+        <article class="stat-card">
+          <h3>Tickets ouverts</h3>
+          <p class="stat-number">12</p>
+        </article>
+
+        <article class="stat-card">
+          <h3>Tickets critiques</h3>
+          <p class="stat-number">3</p>
+        </article>
+
+        <article class="stat-card">
+          <h3>Tickets validés</h3>
+          <p class="stat-number">5</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Filtrage</h2>
+
+      <form class="filter-form">
+
+        <div class="form-group">
+          <label for="status-filter">Statut</label>
+
+          <select id="status-filter">
+            <option value="all">Tous</option>
+            <option value="open">Ouvert</option>
+            <option value="progress">En cours</option>
+            <option value="closed">Fermé</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="priority-filter">Priorité</label>
+
+          <select id="priority-filter">
+            <option value="all">Toutes</option>
+            <option value="critical">Critique</option>
+            <option value="high">Haute</option>
+            <option value="medium">Moyenne</option>
+            <option value="low">Basse</option>
+          </select>
+        </div>
+
+        <button type="button" id="filter-button">
+          Filtrer
+        </button>
+
+      </form>
+    </section>
+
+    <section class="content-section">
+      <h2>Ancien affichage legacy</h2>
+
+      <p>
+        Cette partie du portail correspond à l’ancien système.
+        Elle devra être progressivement remplacée par un affichage moderne.
+      </p>
+
+      <table class="legacy-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Priorité</th>
+            <th>Statut</th>
+            <th>Assigné</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>WEB-002</td>
+            <td>Lien analyse drones cassé</td>
+            <td>Haute</td>
+            <td>Ouvert</td>
+            <td>—</td>
+          </tr>
+
+          <tr>
+            <td>WEB-003</td>
+            <td>Badge nouvelle version</td>
+            <td>Moyenne</td>
+            <td>Ouvert</td>
+            <td>—</td>
+          </tr>
+
+          <tr>
+            <td>PY-001</td>
+            <td>Audit qualité HTML</td>
+            <td>Critique</td>
+            <td>Ouvert</td>
+            <td>Infra</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="content-section">
+      <h2>Nouvelle interface tickets</h2>
+
+      <p>
+        Cette zone doit progressivement remplacer l’ancien tableau HTML.
+      </p>
+
+      <div id="tickets-container" class="tickets-grid">
+
+        <article class="ticket-card critical">
+          <div class="ticket-header">
+            <span class="ticket-id">PY-001</span>
+            <span class="ticket-priority">Critique</span>
+          </div>
+
+          <h3>Audit qualité HTML</h3>
+
+          <p>
+            Vérifier automatiquement les pages HTML et détecter les liens cassés.
+          </p>
+
+          <div class="ticket-footer">
+            <span class="ticket-status open">Ouvert</span>
+            <span class="ticket-owner">Infra</span>
+          </div>
+        </article>
+
+        <article class="ticket-card high">
+          <div class="ticket-header">
+            <span class="ticket-id">WEB-002</span>
+            <span class="ticket-priority">Haute</span>
+          </div>
+
+          <h3>Correction navigation</h3>
+
+          <p>
+            Corriger les liens internes du portail et uniformiser la navigation.
+          </p>
+
+          <div class="ticket-footer">
+            <span class="ticket-status open">Ouvert</span>
+            <span class="ticket-owner">DSI</span>
+          </div>
+        </article> 
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Zone JavaScript</h2>
+
+      <p>
+        Les futurs tickets devront être chargés dynamiquement à partir d’un JSON.
+      </p>
+
+      <button id="load-tickets-button">
+        Charger les tickets
+      </button>
+
+      <div id="dynamic-tickets"></div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>NovaTech - DSI Développement</p>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

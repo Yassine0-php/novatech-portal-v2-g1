@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Rapport - NovaTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Rapport opérationnel</h1>
+    <p>Analyse des données terrain et suivi des incidents.</p>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Accueil</a>
+    <a href="methodology.html">Méthodologie</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="report.html">Rapport</a>
+    <a href="analyse-drone.html">Analyse des drones</a>
+  </nav>
+
+  <main class="page-content">
+
+    <section class="content-section">
+      <h2>Résumé opérationnel</h2>
+
+      <div class="report-summary">
+
+        <article class="summary-card">
+          <h3>Zones surveillées</h3>
+          <p class="big-number">5</p>
+        </article>
+
+        <article class="summary-card">
+          <h3>Zones critiques</h3>
+          <p class="big-number">2</p>
+        </article>
+
+        <article class="summary-card">
+          <h3>Drones disponibles</h3>
+          <p class="big-number">1</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Rapport dynamique</h2>
+
+      <p>
+        Cette section doit être générée dynamiquement à partir du fichier
+        <code>report.json</code>.
+      </p>
+
+      <div id="report-container" class="report-grid">
+
+        <!-- contenu généré dynamiquement -->
+
+      </div>
+
+    </section>
+
+    <section class="content-section">
+      <h2>Filtres</h2>
+
+      <form class="filter-form">
+
+        <div class="form-group">
+          <label for="zone-filter">Zone</label>
+
+          <select id="zone-filter">
+            <option value="all">Toutes</option>
+            <option value="A">Zone A</option>
+            <option value="B">Zone B</option>
+            <option value="C">Zone C</option>
+            <option value="D">Zone D</option>
+            <option value="E">Zone E</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="risk-filter">Niveau de risque</label>
+
+          <select id="risk-filter">
+            <option value="all">Tous</option>
+            <option value="critical">Critique</option>
+            <option value="high">Élevé</option>
+            <option value="medium">Moyen</option>
+            <option value="low">Faible</option>
+          </select>
+        </div>
+
+        <button type="button" id="apply-filters">
+          Appliquer
+        </button>
+
+      </form>
+    </section>
+
+    <section class="content-section">
+      <h2>Ancien système de rapport</h2>
+
+      <p>
+        Cette partie du portail provient de l’ancienne génération HTML.
+      </p>
+
+      <table class="legacy-table">
+        <thead>
+          <tr>
+            <th>Zone</th>
+            <th>Risque</th>
+            <th>Besoins</th>
+            <th>Priorité</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>A</td>
+            <td>0.7</td>
+            <td>0.4</td>
+            <td>Haute</td>
+          </tr>
+
+          <tr>
+            <td>B</td>
+            <td>0.3</td>
+            <td>-0.2</td>
+            <td>Faible</td>
+          </tr>
+
+          <tr>
+            <td>C</td>
+            <td>0.9</td>
+            <td>0.8</td>
+            <td>Critique</td>
+          </tr>
+
+          <tr>
+            <td>D</td>
+            <td>0.5</td>
+            <td>0.5</td>
+            <td>Moyenne</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <section class="content-section">
+      <h2>Graphiques</h2>
+
+      <p>
+        Une visualisation simple des données devra être ajoutée.
+      </p>
+
+      <div class="chart-placeholder">
+        <p>Graphique à implémenter</p>
+      </div>
+
+    </section>
+
+    <section class="content-section">
+      <h2>Export</h2>
+
+      <p>
+        Le rapport doit pouvoir être exporté proprement pour impression.
+      </p>
+
+      <button id="print-report-button">
+        Imprimer le rapport
+      </button>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>NovaTech - DSI Développement</p>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

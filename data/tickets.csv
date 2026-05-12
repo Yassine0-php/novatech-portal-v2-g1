@@ -1,0 +1,27 @@
+id,title,priority,status,assignee,category
+WEB-001,Refondre les tableaux legacy en cards,Critique,Ouvert,Front,Web
+WEB-002,Corriger les liens cassés du portail,Haute,Ouvert,DSI,Web
+WEB-003,Rendre le badge nouvelle version visible,Moyenne,Ouvert,Front,Web
+WEB-004,Supprimer les informations sensibles HTML,Critique,Ouvert,Sécurité,Sécurité
+WEB-005,Corriger le responsive mobile,Moyenne,En cours,Front,Web
+WEB-006,Remplacer les layouts legacy par flexbox,Haute,Ouvert,Front,Web
+WEB-007,Factoriser les composants cards,Moyenne,Ouvert,Front,Web
+WEB-008,Ajouter un mode impression propre,Basse,Ouvert,Front,Web
+JS-001,Générer dynamiquement les tickets depuis JavaScript,Haute,Ouvert,Front,JavaScript
+JS-002,Ajouter des filtres dynamiques sur les tickets,Moyenne,Ouvert,Front,JavaScript
+JS-003,Charger les rapports depuis un JSON,Critique,Ouvert,Front,JavaScript
+JS-004,Créer un graphique simple des priorités,Moyenne,Ouvert,Front,JavaScript
+JS-005,Ajouter une recherche temps réel,Basse,Ouvert,Front,JavaScript
+CSS-001,Introduire des variables CSS,Critique,Ouvert,Front,CSS
+CSS-002,Supprimer les doublons CSS,Haute,En cours,Front,CSS
+CSS-003,Nettoyer les classes inutilisées,Moyenne,Ouvert,Front,CSS
+CSS-004,Harmoniser les boutons du portail,Moyenne,Ouvert,Front,CSS
+CSS-005,Créer une vraie stratégie responsive,Critique,Ouvert,Front,CSS
+DATA-001,Vérifier les incohérences des données JSON,Haute,Ouvert,Data,Data
+DATA-002,Contrôler les valeurs invalides CSV,Moyenne,Ouvert,Data,Data
+PY-001,Créer un script d’audit HTML,Critique,Ouvert,Infra,Python
+PY-002,Vérifier automatiquement les liens internes,Haute,Ouvert,Infra,Python
+PY-003,Générer un rapport audit.md,Moyenne,Ouvert,Infra,Python
+PY-004,Vérifier la présence des fichiers critiques,Basse,Ouvert,Infra,Python
+DOC-001,Mettre à jour le README,Moyenne,Ouvert,DSI,Documentation
+DOC-002,Documenter les conventions CSS,Basse,Ouvert,DSI,Documentation

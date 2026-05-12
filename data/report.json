@@ -1,0 +1,57 @@
+[
+  {
+    "zone": "A",
+    "risk": 0.7,
+    "needs": 0.4,
+    "infected": 95,
+    "priority": "Haute",
+    "status": "Surveillance renforcée",
+    "drone_access": true,
+    "summary": "Zone difficile d’accès avec forte progression des cas.",
+    "last_update": "2026-05-11"
+  },
+  {
+    "zone": "B",
+    "risk": 0.3,
+    "needs": -0.2,
+    "infected": 20,
+    "priority": "Faible",
+    "status": "Données incohérentes",
+    "drone_access": true,
+    "summary": "Présence de valeurs invalides dans les besoins humanitaires.",
+    "last_update": "2026-05-11"
+  },
+  {
+    "zone": "C",
+    "risk": 0.9,
+    "needs": 0.8,
+    "infected": 90,
+    "priority": "Critique",
+    "status": "Intervention prioritaire",
+    "drone_access": false,
+    "summary": "Zone prioritaire avec croissance épidémique très élevée.",
+    "last_update": "2026-05-11"
+  },
+  {
+    "zone": "D",
+    "risk": 0.5,
+    "needs": 0.5,
+    "infected": 40,
+    "priority": "Moyenne",
+    "status": "Suivi normal",
+    "drone_access": true,
+    "summary": "Situation stable mais nécessitant un suivi quotidien.",
+    "last_update": "2026-05-11"
+  },
+  {
+    "zone": "E",
+    "risk": 0.2,
+    "needs": 0.3,
+    "infected": 25,
+    "priority": "Faible",
+    "status": "Zone secondaire",
+    "drone_access": true,
+    "summary": "Zone peu critique mais encore surveillée.",
+    "last_update": "2026-05-11"
+  }
+]
