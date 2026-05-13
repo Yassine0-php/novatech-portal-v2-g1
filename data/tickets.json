@@ -1,0 +1,19 @@
+ [
+ {
+    "id": "WEB-002",
+    "title": "Correction navigation",
+    "description": "Corriger les liens internes du portail et uniformiser la navigation.",
+    "priority": "Haute",
+    "status": "Ouvert",
+    "owner": "DSI"
+  },
+  {
+    "id": "WEB-005",
+    "title": "Responsive mobile",
+    "description": "Repenser l'affichage mobile des anciens composants du portail.",
+    "priority": "Moyenne",
+    "status": "En cours",
+    "owner": "Front"
+  }
+  
+  ]
