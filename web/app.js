@@ -1,6 +1,55 @@
+
 // app.js
 // Fichier volontairement incomplet et améliorable.
 // Objectif : servir de base aux tickets JavaScript du sprint.
+
+const button = document.getElementById("load-tickets-button");
+const container = document.getElementById("dynamic-tickets");
+
+// Événement sur le bouton
+button.addEventListener("click", loadTickets);
+
+// Fonction principale
+async function loadTickets() {
+  try {
+    console.log("Chargement des tickets...");
+
+    const response = await fetch("data/tickets.json");
+
+    if (!response.ok) {
+      throw new Error("Erreur lors du chargement du JSON");
+    }
+
+    const tickets = await response.json();
+    renderTickets(tickets);
+
+  } catch (error) {
+    console.error("Erreur :", error);
+    container.innerHTML = `<p style="color:red;">Erreur de chargement</p>`;
+  }
+}
+
+// Fonction pour afficher les tickets
+function renderTickets(tickets) {
+  container.innerHTML = "";
+
+  if (tickets.length === 0) {
+    container.innerHTML = "<p>Aucun ticket trouvé</p>";
+    return;
+  }
+
+  tickets.forEach(ticket => {
+    const div = document.createElement("div");
+    div.classList.add("ticket");
+
+    div.innerHTML = `
+      <h3>${ticket.title}</h3>
+      <p> ${ticket.description}</p>
+    `;
+
+    container.appendChild(div);
+  });
+}
 
 const tickets = [
   {
